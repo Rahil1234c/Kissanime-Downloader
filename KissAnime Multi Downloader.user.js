@@ -5,9 +5,9 @@
 // @description  This is a userscript that will download multi episodes form KissAnime.
 // @author       AnimeBro1
 // @homepage     https://github.com/Eltion/Kissanime-Downloader
-// @match        http://kissanime.ru/Anime/*
-// @include      http://kissanime.ru/Anime/*
-// @exclude      http://kissanime.ru/Anime/*/*
+// @match        http://https://ww.kiss-anime.ws/anime/*
+// @include      https://ww.kiss-anime.ws/anime/*
+// @exclude      https://ww.kiss-anime.ws/anime/*/*
 // @grant        GM_getValue
 // @grant        GM_listValues
 // @run-at       document-end
@@ -477,8 +477,8 @@ function toDataURL(url, callback) {
     };
     reader.readAsDataURL(xhr.response);
   };
-    //alert("http://kissanime.ru/Special/"+url);
-  xhr.open('GET', "http://kissanime.ru/Special/"+url);
+    //alert("https://ww.kiss-anime.ws/"+url);
+  xhr.open('GET', "https://ww.kiss-anime.ws/"+url);
   xhr.responseType = 'blob';
   xhr.send();
 }
